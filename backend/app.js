@@ -1,6 +1,7 @@
 
 const express = require('express')
 const app = express()
+const linkRouter = require('./controllers/link')
 const mongoose = require('mongoose')
 require('dotenv').config()
 
@@ -20,5 +21,6 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true 
 
 app.use(express.static('build'))
 app.use(express.json())
+app.use('/api/link', linkRouter)
 
 module.exports = app
