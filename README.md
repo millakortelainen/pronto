@@ -6,7 +6,7 @@
 * Scheduling
   * Studying
   * Integration for google calender
-* Budjeting
+* Budgeting
 * List for books
   * Maybe for groeceries too?
   * Create Lists
@@ -16,4 +16,4 @@
 
 | day   | time  | explanation |
 |-------|-------|-------------|
-| 12.1. | 12.58 |             |
+| 12.1. | 12.58 - 15.00 |             |
