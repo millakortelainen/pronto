@@ -6,7 +6,7 @@
 * Scheduling
   * Studying
   * Integration for google calender
-* Budjeting
+* Budgeting
 * List for books
   * Maybe for groeceries too?
   * Create Lists
