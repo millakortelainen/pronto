@@ -11,3 +11,9 @@
   * Maybe for groeceries too?
   * Create Lists
 * Cool graphs from data
+
+## Time accounting
+
+| day   | time  | explanation |
+|-------|-------|-------------|
+| 12.1. | 12.58 |             |
