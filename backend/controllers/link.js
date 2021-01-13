@@ -10,8 +10,8 @@ linkRouter.get('/', (req, res) => {
 linkRouter.post('/', (req, res) => {
     const body = req.body
     const link = new Link({
-        link: body.link,
-        added: new Date()
+        url: body.url,
+        created: new Date()
     })
     link.save()
         .then(savedLink => {
