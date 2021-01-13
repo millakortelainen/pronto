@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const linkRouter = require('./controllers/link')
 const mongoose = require('mongoose')
+const cors = require('cors')
 require('dotenv').config()
 
 let MONGODB_URI = process.env.MONGODB_URI
@@ -22,5 +23,6 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true 
 app.use(express.static('build'))
 app.use(express.json())
 app.use('/api/link', linkRouter)
+app.use(cors())
 
 module.exports = app
