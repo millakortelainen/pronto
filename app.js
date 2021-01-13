@@ -1,13 +1,11 @@
-
+require('dotenv').config()
 const express = require('express')
 const app = express()
 const linkRouter = require('./controllers/link')
 const mongoose = require('mongoose')
 const cors = require('cors')
-require('dotenv').config()
 
 let MONGODB_URI = process.env.MONGODB_URI
-
 if (process.env.NODE_ENV === 'development') {
     MONGODB_URI = process.env.TEST_MONGODB_URI
 }
