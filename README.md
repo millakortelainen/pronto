@@ -17,4 +17,4 @@
 | day   | time(h)  | explanation |
 |-------|-------|-------------|
 | 12.1. | 2 |setting up the backend and mongodb|
-|13.1.|10.30-13.00|set up the heroku|
+|13.1.|10.30-13.00, 15-|set up the heroku|
