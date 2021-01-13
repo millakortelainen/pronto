@@ -14,6 +14,7 @@
 
 ## Time accounting
 
-| day   | time  | explanation |
+| day   | time(h)  | explanation |
 |-------|-------|-------------|
-| 12.1. | 12.58 - 15.00, 16.35 |             |
+| 12.1. | 2 |setting up the backend and mongodb|
+|13.1.|||
