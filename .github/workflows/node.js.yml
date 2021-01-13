@@ -18,7 +18,7 @@ jobs:
       with: 
         node-version: 12.x
     - run: npm install
-    - run: npm run build:ui
+    - run: cd ../frontend && npm install && npm run build --prod && cp -r build ../backend
     - name: Deploy
       uses: s0/git-publish-subdir-action@develop
       env:
