@@ -18,3 +18,4 @@
 |-------|-------|-------------|
 | 12.1. | 2 |setting up the backend and mongodb|
 |13.1.|3|set up the heroku and github actiond (ci -pipeline works)|
+|14.1.|2,5|frontend works with backend|
