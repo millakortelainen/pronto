@@ -1,13 +1,13 @@
 const linkRouter = require('express').Router()
 const Link = require('../models/link')
 
-linkRouter.get('/', (req, res) => {
-    Link.find({}).then(links => {
-        res.json(links.map(link => link.toJSON()))
-    })
+linkRouter.get('/', async (req, res) => {
+    const links = await Link.find({})
+    res.json(links.map(link => link.toJSON()))
 })
 
 linkRouter.post('/', (req, res) => {
+    console.log(req.body)
     const body = req.body
     const link = new Link({
         url: body.url,

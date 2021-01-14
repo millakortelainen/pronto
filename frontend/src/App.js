@@ -5,18 +5,15 @@ const App = () => {
     const [links, setLinks] = useState([])
     const [newLink, setNewLink] = useState('')
     useEffect(() => {
-        linkService.getAll()
-            .then(initialLinks => {
-                setLinks(initialLinks)
-            })
-    })
+        linkService.getAll().then(res => setLinks(res))
+    }, [])
     const addLink = (event) => {
         event.preventDefault()
         const linkObject = {
             url: newLink
         }
-        linkService.create(linkObject).then(returnedObject => {
-            setLinks(links.concat(returnedObject))
+        linkService.create(linkObject).then(res => {
+            setLinks(links.concat(res))
             setNewLink('')
         })
     }
