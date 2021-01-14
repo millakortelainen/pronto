@@ -2,12 +2,11 @@
 const mongoose = require('mongoose')
 
 const linkSchema = new mongoose.Schema({
-  link: {
+  url: {
     type: String,
-    required: true,
-    minlength: 5
+    required: true
   },
-  added: Date,
+  created: Date,
 })
 
 linkSchema.set('toJSON', {
