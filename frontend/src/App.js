@@ -27,7 +27,7 @@ const App = () => {
                 {links.map((link, i) =>
                     <li key={i}>{link.url} 
                     <button onClick={(event)=>{removeLink(link.id)}}>delete</button>
-                    <button>show</button></li>
+                    <button onClick={(event)=>{console.log(link)}}>show</button></li>
                 )}
             </ul>
             <form onSubmit={addLink}>
