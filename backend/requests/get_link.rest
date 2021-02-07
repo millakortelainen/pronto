@@ -1,0 +1,2 @@
+GET http://localhost:3001/api/link/60002f0f3091b360f89b15f6
+Content-Type: application/json

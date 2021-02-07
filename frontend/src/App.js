@@ -17,11 +17,17 @@ const App = () => {
             setNewLink('')
         })
     }
+
+    const removeLink = (id) => {
+        linkService.remove(id).then(res => setLinks(links.filter(l => l.id !== id)))
+    }
     return (
         <div>
             <ul>
                 {links.map((link, i) =>
-                    <li key={i}>{link.url}</li>
+                    <li key={i}>{link.url} 
+                    <button onClick={(event)=>{removeLink(link.id)}}>delete</button>
+                    <button>show</button></li>
                 )}
             </ul>
             <form onSubmit={addLink}>

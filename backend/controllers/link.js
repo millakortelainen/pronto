@@ -7,7 +7,6 @@ linkRouter.get('/', async (req, res) => {
 })
 
 linkRouter.post('/', (req, res) => {
-    console.log(req.body)
     const body = req.body
     const link = new Link({
         url: body.url,
@@ -17,6 +16,16 @@ linkRouter.post('/', (req, res) => {
         .then(savedLink => {
             res.json(savedLink.toJSON())
         })
+})
+
+linkRouter.get('/:id', async (req, res) => {
+    const link = await Link.findById(req.params.id)
+    res.json(link.toJSON())
+})
+
+linkRouter.delete('/:id', async (req, res) => {
+    await Link.findByIdAndRemove(req.params.id)
+    res.status(204).end()
 })
 
 module.exports = linkRouter
